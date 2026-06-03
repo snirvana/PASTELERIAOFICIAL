@@ -1,0 +1,194 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>VELAZQUEZPAG3</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <li class="nav-item active"></li>
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag0.html">INTRODUCCIÓN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag1.html">Recetas faciles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag2.html">Postres saludables<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag3.html">Postres mexicanos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag4.html">Tendencia<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag5.html">Pedidos<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return redirigir(event)">
+        <input id="busqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" required>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          BUSCAR
+        </button>
+      </form>
+
+      <script>
+        function redirigir(e) {
+          e.preventDefault();
+
+          let valor = document.getElementById("busqueda").value.toLowerCase();
+
+          if (valor.includes("inicio")) {
+            window.location.href = "index.html";
+          } else if (valor.includes("Recetas faciles")) {
+            window.location.href = "velazquezpag1.html";
+          } else if (valor.includes("postres saludables")) {
+            window.location.href = "velazquezpag2.html";
+          } else if (valor.includes("postres mexicanos")) {
+            window.location.href = "velazquezpag3.html";
+          } else if (valor.includes("tendencias") || valor.includes("resenas")) {
+            window.location.href = "velazquezpag4.html";
+          } else if (valor.includes("pedidos")) {
+            window.location.href = "velazquezpag5.html";
+          } else if (valor.includes("Introducción")) {
+            window.location.href = "velazquezpag0.html";
+            alert("No se encontró la búsqueda");
+          }
+        }
+      </script>
+    </div>
+  </nav>
+  <img src="imagenes/bane3.JPG" WIDTH="100%" ALIGN="MIDDLE">
+  <h1 Align="center">POSTRES TRADICIONALES MEXICANOS </h1>
+
+  <h2 align="center">NUESTROS POSTRES DESTACADOS</h2>
+  <table width=90% align=center border=3>
+    <tr>
+      <td><img src="imagenes/postreflan.JPG" WIDTH="100%"></td>
+      <td>Caracteristicas
+        <ul>
+          <li>Postre cremoso hecho con huevo</li>
+          <li>Tiene una textura suave y gelatinosa</li>
+          <li>Lleva caramelo líquido en la parte de arriba</li>
+          <li>Se cocina al horno a baño María</li>
+          <li>Es un postre muy popular en México</li>
+        </ul>
+      </td>
+      <td><img src="imagenes/postrearroz.JPG" WIDTH="100%"></td>
+      <td>Caracteristicas
+        <ul>
+          <li>Postre tradicional hecho con arroz, leche y azúcar.</li>
+          <li>Se cocina a fuego lento hasta que queda cremoso.</li>
+          <li>Generalmente lleva canela y a veces pasas</li>
+          <li>Puede comerse caliente o frío.</li>
+          <li>Tiene un sabor dulce y casero.</li>
+        </ul>
+      </td>
+      <td><img src="imagenes/postrechurro.JPG" WIDTH="100%"></td>
+      <td>Caracteristicas
+        <ul>
+          <li>Dulce hecho con masa de harina frita en aceite.</li>
+          <li>Tienen forma alargada y textura crujiente por fuera.</li>
+          <li>Se cubren con azúcar y canela.</li>
+          <li>Muchas veces se acompañan con chocolate o cajeta.</li>
+          <li>Son muy populares en puestos y ferias en México.</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <h2 align="center">NUESTROS POSTRES DESTACADOS</h2>
+  <table width="80%" align="center">
+    <tr align="center">
+      <td bgcolor="#BFEFFF">
+        <h3>Buñuelos</h3>
+        <img src="imagenes/mexico1.JPG" width="120"><br>
+        Precio: $28
+      </td>
+
+      <td bgcolor="#BFEFFF">
+        <h3>Gelatina de Mosaico</h3>
+        <img src="imagenes/mexico3.JPG" width="120"><br>
+        Precio: $25
+      </td>
+
+    </tr>
+  </table>
+  <h2 align="center">PRECIOS POR PIEZA VS DOCENA </h2>
+  <table border="3" width="90%" align="center">
+    <tr bgcolor="#B2FFFF" align="center">
+      <td><b>Imagen</b></td>
+      <td><b>Nombre del Postre</b></td>
+      <td><b>Precio</b></td>
+      <td><b>Docena</b></td>
+    </tr>
+
+    <tr align="center">
+      <td><img src="imagenes/tablamex3.JPG" width="180"></td>
+      <td>Ate con Queso</td>
+      <td>1 pieza: $28</td>
+      <td>Docena: $300</td>
+    </tr>
+    <tr align="center">
+      <td><img src="imagenes/tablamex4.JPG" width="180"></td>
+      <td>Flan Napolitano</td>
+      <td>1 pieza: $30</td>
+      <td>Docena: $320</td>
+    </tr>
+    <tr align="center">
+      <td><img src="imagenes/tablamex5.JPG" width="180"></td>
+      <td>Arroz con Leche</td>
+      <td>1 pieza: $22</td>
+      <td>Docena: $$240</td>
+    </tr>
+    <tr align="center">
+      <td><img src="imagenes/tablamex6.JPG" width="180"></td>
+      <td>Churros</td>
+      <td>1 pieza: $18</td>
+      <td>Docena: $190</td>
+    </tr>
+  </table>
+  <h2 align="center"></h2>
+  <table width=90% align=center border=3>
+    <tr>
+      <td><img src="imagenes/mexico1.JPG" width="100%"></td>
+      <td><img src="imagenes/mexico3.JPG" height="100%" width="100%"></td>
+      <td><img src="imagenes/mexico1.JPG" width="100%"></td>
+      <td><img src="imagenes/mexico3.JPG" height="100%" width="100%"></td>
+      <td><img src="imagenes/mexico1.JPG" width="100%"></td>
+      <td><img src="imagenes/mexico3.JPG" width="100%"></td>
+    </tr>
+  </table><br>
+  <div class="container">
+    <div class="row">
+      <video width=100% autoplay muted loop controls>
+        <source src="imagenes/video.mp4" type="video/mp4">
+        <source src="NombredelVideo.webm" type="video/webm">
+        <source src="NombredelVideo.ogv" type="video/ogg">
+        <img src="NombredelVideo.png" alt="Video no soportado">
+      </video>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

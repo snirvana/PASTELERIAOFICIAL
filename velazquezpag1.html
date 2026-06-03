@@ -1,0 +1,317 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>VELAZQUEZPAG1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <li class="nav-item active"></li>
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag0.html">INTRODUCCIÓN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag1.html">Recetas faciles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag2.html">Postres saludables<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag3.html">Postres mexicanos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag4.html">Tendencia<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag5.html">Pedidos<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return redirigir(event)">
+        <input id="busqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" required>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          BUSCAR
+        </button>
+      </form>
+
+      <script>
+        function redirigir(e) {
+          e.preventDefault();
+
+          let valor = document.getElementById("busqueda").value.toLowerCase();
+
+          if (valor.includes("inicio")) {
+            window.location.href = "index.html";
+          } else if (valor.includes("Recetas faciles")) {
+            window.location.href = "velazquezpag1.html";
+          } else if (valor.includes("postres saludables")) {
+            window.location.href = "velazquezpag2.html";
+          } else if (valor.includes("postres mexicanos")) {
+            window.location.href = "velazquezpag3.html";
+          } else if (valor.includes("tendencias") || valor.includes("resenas")) {
+            window.location.href = "velazquezpag4.html";
+          } else if (valor.includes("pedidos")) {
+            window.location.href = "velazquezpag5.html";
+          } else if (valor.includes("Introducción")) {
+            window.location.href = "velazquezpag0.html";
+            alert("No se encontró la búsqueda");
+          }
+        }
+      </script>
+    </div>
+  </nav>
+  <img src="imagenes/bane1.JPG" WIDTH="105%" ALIGN="105%">
+  <h1 Align="center">RECETAS DE POSTRES FACILES </h1>
+
+
+</html>
+</body>
+
+<table width=99% align=center border=3>
+  <tr>
+    <h2 align="center">RECETAS FACILEZ</h2>
+
+  <tr>
+    <td><img src="imagenes/galleta.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Galletas con chocolate derretido</li>
+        <li>1 paquete de galletas</li>
+        <li>50g de chocolate</li>
+        <li>1 cucharadita de mantequilla</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/bazo.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Yogurt con frutas y miel</li>
+        <li>1 yogurt natural</li>
+        <li>1/2 taza de fresas</li>
+        <li>1/2 taza de plátano</li>
+        <li>1 cucharada de miel</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/bolis.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Bolis de frutas congeladas</li>
+        <li>2 tazas de jugo de fruta</li>
+        <li>Bolsitas para congelar</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="imagenes/pansito.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Pan dulce con leche condensada y chocolate</li>
+        <li>2 piezas de pan dulce</li>
+        <li>2 cucharadas de leche condensada</li>
+        <li>1 barra de chocolate</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/fresascrema.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Fresas con crema y azúcar</li>
+        <li>1 taza de fresas</li>
+        <li>1/2 taza de crema</li>
+        <li>2 cucharadas de azúcar</li>
+        <li>1 pizca de vainilla</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/gelatinadecolores.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Gelatina mosaico</li>
+        <li>2 sobres de gelatina de colores</li>
+        <li>1 taza de crema</li>
+        <li>1/2 taza de leche condensada</li>
+        <li>1/2 taza de azúcar</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td><img src="imagenes/basodepan.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Pastel rapido de chocolate en vaso</li>
+        <li>1 huevo</li>
+        <li>3 cucharadas de harina</li>
+        <li>2 cucharadas de azucar</li>
+        <li>1 cucharada de cocoa</li>
+        <li>1 cucharada de aceite</li>
+        <li>2 cucharadas de leche</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/duros.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Duraznos con crema y galleta</li>
+        <li>1 lata de duraznos</li>
+        <li>1/2 taza de crema</li>
+        <li>1/2 paquete de galletas</li>
+      </ul>
+    </td>
+    <td><img src="imagenes/arroz.JPG" width="100%"></td>
+    <td>-Ingredientes-
+      <ul>
+        <li>Arroz con leche</li>
+        <li>1 taza de arroz</li>
+        <li>2 tazas de leche</li>
+        <li>1/2 taza de azucar</li>
+        <li>1 pizca de canela</li>
+        <li>1 cucharadita de esencia de vainilla</li>
+      </ul>
+    </td>
+  </tr>
+</table><br>
+
+</html>
+<h2 align="center">NUESTROS POSTRES DESTACADOS</h2>
+<table width="80%" align="center">
+  <tr align="center">
+    <td bgcolor="#BFEFFF">
+      <h3>Fresas con crema</h3>
+      <img src="imagenes/c.PNG" width="120"><br>
+      Precio: $15
+    </td>
+    <td bgcolor="#BFEFFF">
+      <h3>Plátanos con chocolate</h3>
+      <img src="imagenes/cc.PNG" width="120"><br>
+      Precio: $35
+    </td>
+    <td bgcolor="#BFEFFF">
+      <h3>Gelatina de yogo</h3>
+      <img src="imagenes/ccc.PNG" width="120"><br>
+      Precio: $45
+    </td>
+
+</table>
+<h2 align="center">APROX DINERO</h2>
+<table border="2" width="70%" align="center">
+  <tr align="center">
+    <th>
+      <font size="5">POSTRE</font>
+    </th>
+    <th>
+      <font size="5">PRECIO</font>
+    </th>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Gelatina de limon con leche</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$120</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Platanos con chocolate</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$130</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Manzanas horneadas con canela</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$150</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Galletas con chocolate derretido</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$180</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Yogurt con frutas y miel</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$180</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Bolis de frutas congeladas</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$130</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Pan dulce con leche condensada y chocolate</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$160</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Fresas con crema y azúcar</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$180</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Gelatina mosaico</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$170</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Pastel rápido de chocolate en vaso</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$130</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Duraznos con crema y galleta</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$180</font>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+      <font size="5">Arroz con leche</font>
+    </td>
+    <td>
+      <font size="6" color="sky blue">$190</font>
+    </td>
+  </tr>
+</table>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

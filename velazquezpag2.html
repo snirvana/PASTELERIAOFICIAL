@@ -1,0 +1,197 @@
+<!Doctype html>
+<html>
+
+<head>
+  <title>VELAZQUEZPAG2</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <li class="nav-item active"></li>
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag0.html">INTRODUCCIÓN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag1.html">Recetas faciles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag2.html">Postres saludables<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag3.html">Postres mexicanos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag4.html">Tendencia<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag5.html">Pedidos<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return redirigir(event)">
+        <input id="busqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" required>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          BUSCAR
+        </button>
+      </form>
+
+      <script>
+        function redirigir(e) {
+          e.preventDefault();
+
+          let valor = document.getElementById("busqueda").value.toLowerCase();
+
+          if (valor.includes("inicio")) {
+            window.location.href = "index.html";
+          } else if (valor.includes("Recetas faciles")) {
+            window.location.href = "velazquezpag1.html";
+          } else if (valor.includes("postres saludables")) {
+            window.location.href = "velazquezpag2.html";
+          } else if (valor.includes("postres mexicanos")) {
+            window.location.href = "velazquezpag3.html";
+          } else if (valor.includes("tendencias") || valor.includes("resenas")) {
+            window.location.href = "velazquezpag4.html";
+          } else if (valor.includes("pedidos")) {
+            window.location.href = "velazquezpag5.html";
+          } else if (valor.includes("Introducción")) {
+            window.location.href = "velazquezpag0.html";
+            alert("No se encontró la búsqueda");
+          }
+        }
+      </script>
+    </div>
+  </nav>
+  <img src="imagenes/bane2.JPG" WIDTH="100%" ALIGN="MIDDLE">
+  <h1 Align="center">POSTRES SALUDABLES Y DELICIOSO</h1>
+
+</body>
+
+</html>
+<h2 align="center">POSTRES LIGEROS Y REFRECANTES </h2>
+<table width=70% align=center border=3>
+  <tr>
+    <td><img src="imagenes/saludable1.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable2.JPG" height="100%" width="100%"></td>
+    <td><img src="imagenes/saludable3.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable4.JPG" height="100%" width="100%"></td>
+    <td><img src="imagenes/saludable5.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable6.JPG" width="100%"></td>
+  </tr>
+</table><br>
+<h2 align="center">PRECIOS POR PIEZA VS DOCENA </h2>
+<table border="3" width="90%" align="center">
+  <tr bgcolor="#B2FFFF" align="center">
+    <td><b>Imagen</b></td>
+    <td><b>Nombre del Postre</b></td>
+    <td><b>Ingredientes</b></td>
+    <td><b>Precio</b></td>
+    <td><b>Docena</b></td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o6.JPG" width="150"></td>
+    <td>Yogurt con Frutas</td>
+    <td>Yogurt natural,Fresas,Plátano,Granola</td>
+    <td>1 pieza: $35</td>
+    <td>Docena: $380</td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o5.JPG" width="120"></td>
+    <td>Manzana Horneada con Canela</td>
+    <td>Manzana horneada, miel, canela</td>
+    <td>1 pieza: $30</td>
+    <td>Docena: $320</td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o4.JPG" width="120"></td>
+    <td>Gelatina Light con Fruta</td>
+    <td>Gelatina sin azúcar,Fresas,Durazno</td>
+    <td>1 pieza: $25</td>
+    <td>Docena: $260</td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o3.JPG" width="120"></td>
+    <td>Plátano con Chocolate Oscuro</td>
+    <td>Plátano, chocolate oscuro</td>
+    <td>1 pieza: $28</td>
+    <td>Docena: $300</td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o2.JPG" width="120"></td>
+    <td>Galletas de Avena</td>
+    <td>Avena,Miel,Plátano</td>
+    <td>1 pieza: $20</td>
+    <td>Docena: $210</td>
+  </tr>
+  <tr align="center">
+    <td><img src="imagenes/tabla1o1.JPG" width="120"></td>
+    <td>Cheesecake Saludable</td>
+    <td>Yogurt griego,Galleta integral,Frutas naturales</td>
+    <td>1 pieza: $40</td>
+    <td>Docena: $430</td>
+  </tr>
+</table>
+
+<h2 align="center">BENEFICIOS DIGESTIVOS </h2>
+<table border="3" width="79%" align="center">
+  <tr bgcolor="#B2FFFF" align="center">
+    <td><b>Imagen</b></td>
+    <td><b>Nombre del Postre</b></td>
+    <td><b>Beneficios</b></td>
+  </tr>
+
+  <tr align="center">
+    <td><img src="imagenes/tabla2o2.JPG" width="120"></td>
+    <td>Manzana Horneada con Canela</td>
+    <td>
+      <ul>
+        *Rica en fibra.<br>
+        *Ayuda a mejorar la digestión.<br>
+        *Tiene antioxidantes naturales.<br>
+        *Es baja en calorías.<br>
+      </ul>
+    </td>
+  </tr>
+
+  <tr align="center">
+    <td><img src="imagenes/tabla2o4.JPG" width="120"></td>
+    <td>Platano con Chocolate Oscuro</td>
+    <td>
+      <ul>
+        *Aporta energía natural.<br>
+        *Rico en potasio.<br>
+        *El chocolate oscuro tiene antioxidantes.<br>
+        *Ayuda a mejorar el estado de ánimo.<br>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h2 align="center">POSTRES DE BAJA CALORIA</h2>
+<table width=70% align=center border=3>
+  <tr>
+    <td><img src="imagenes/saludable1.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable2.JPG" height="100%" width="100%"></td>
+    <td><img src="imagenes/saludable3.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable4.JPG" height="100%" width="100%"></td>
+    <td><img src="imagenes/saludable5.JPG" width="100%"></td>
+    <td><img src="imagenes/saludable6.JPG" width="100%"></td>
+  </tr>
+</table><br>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

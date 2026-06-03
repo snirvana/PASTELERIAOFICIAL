@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charser="utf-8">
+  <title> PRESENTACIÓN</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <li class="nav-item active"></li>
+    <a class="navbar-brand" href="index.html">INICIO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag0.html">PRESENTACIÓN<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag1.html">Postres faciles<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag2.html">Postres saludables<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag3.html">Postres Mexicanos<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag4.html">Tendencia<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="velazquezpag5.html">PEDIDOS<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" onsubmit="return redirigir(event)">
+        <input id="busqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" required>
+
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          BUSCAR
+        </button>
+      </form>
+
+      <script>
+        function redirigir(e) {
+          e.preventDefault();
+
+          let valor = document.getElementById("busqueda").value.toLowerCase();
+
+          if (valor.includes("inicio")) {
+            window.location.href = "index.html";
+          } else if (valor.includes("articulo")) {
+            window.location.href = "velazquezpag1.html";
+          } else if (valor.includes("promociones")) {
+            window.location.href = "velazquezpag2.html";
+          } else if (valor.includes("tutoriales")) {
+            window.location.href = "velazquezpag3.html";
+          } else if (valor.includes("reseñas") || valor.includes("resenas")) {
+            window.location.href = "velazquezpag4.html";
+          } else if (valor.includes("pedidos")) {
+            window.location.href = "velazquezpag5.html";
+          } else if (valor.includes("presentación")) {
+            window.location.href = "velazquezpag0.html";
+            alert("No se encontró la búsqueda");
+          }
+        }
+      </script>
+    </div>
+  </nav>
+  <div class="contenedor">
+    <header>
+
+    </header>
+
+    <main>
+      <div class="perfil">
+        <img src="imagenes/ftperfil.png" alt="">
+      </div>
+      <div class="texto">
+        <h2> Little Cake</h2>
+
+        <p>Bienvenido a nuestra página de postres, un espacio donde lo dulce se convierte en una experiencia única. Aquí
+          encontrarás una gran variedad de delicias hechas con ingredientes de calidad y mucho cuidado, perfectas para
+          cualquier ocasión. Nuestro objetivo es ofrecerte sabores que te hagan disfrutar cada momento, desde lo clásico
+          hasta lo más creativo. Explora nuestro catálogo y descubre el postre ideal para consentirte o compartir con
+          quienes más quieres.</p>
+    </main>
+
+    <style>
+      .contenedor-botones {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+      }
+
+      .boton {
+        padding: 12px 20px;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        border-radius: 8px;
+        font-size: 16px;
+      }
+
+      .boton:hover {
+        background-color: darkgreen;
+      }
+    </style>
+    </head>
+
+    <body>
+
+      <div class="contenedor-botones">
+        <a href="index.html" class="boton">INICIO</a>
+        <a href="velazquezpag1.html" class="boton">Postres faciles</a>
+        <a href="velazquezpag2.html" class="boton">Postres saludables</a>
+        <a href="velazquezpag3.html" class="boton">Postres Mexicanos</a>
+        <a href="velazquezpag4.html" class="boton">tendencia</a>
+        <a href="velazquezpag5.html" class="boton">pedidos</a>
+      </div>
+
+      <style>
+        .contenedor-cajas {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          max-width: 1100px;
+          margin: 20px auto;
+          gap: 20px;
+        }
+
+        .caja {
+          width: 180px;
+          height: 300px;
+          background-color: lightblue;
+          text-align: center;
+          border: 2px solid black;
+          padding: 10px;
+          box-sizing: border-box;
+        }
+      </style>
+      </head>
+
+      <body>
+
+        <div class="contenedor-cajas">
+
+          <div class="caja">
+            <h3>Gelatina</h3>
+            <td width=50%><img src="imagenes/gelatinadecolores.JPG" WIDTH="100%"></td>
+            <p>Refrescante y suave, con un delicioso toque cítrico.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Galletita</h3>
+            <td width=50%><img src="imagenes/galleta.JPG" WIDTH="100%"></td>
+            <p>Crujientes por fuera y suaves por dentro.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Pastel HLD</h3>
+            <td width=50%><img src="imagenes/Brownie.JPG" WIDTH="100%"></td>
+            <p>Intenso sabor a chocolate, húmedo y esponjoso.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Donas</h3>
+            <td width=50%><img src="imagenes/duros.JPG" WIDTH="55%"></td>
+            <p>Esponjoso y jugoso, bañado en una mezcla dulce que se derrite en la boca.</p>
+          </div>
+
+          <div class="caja">
+            <h3>chocolate</h3>
+            <td width=50%><img src="imagenes/paychocolate.JPG" WIDTH="70%"></td>
+            <p>Cremoso y lleno de sabor, con una base crujiente.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Pay de fresa</h3>
+            <td width=50%><img src="imagenes/payfresa.JPG" WIDTH="70%"></td>
+            <p>Dulce y fresco, con el equilibrio perfecto.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Fresas con crema</h3>
+            <td width=50%><img src="imagenes/fresascrema.JPG" height="50%" WIDTH="60%"></td>
+            <p>frescura natural combinada con una crema suave y dulce.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Cheesecake</h3>
+            <td width=50%><img src="imagenes/cheese.JPG" WIDTH="60%"></td>
+            <p>Textura cremosa y sabor delicado, con un toque dulce que lo hace único.</p>
+
+          </div>
+
+          <div class="caja">
+            <h3>Crepas</h3>
+            <td width=50%><img src="imagenes/Crepas dulces gourmet.JPG" WIDTH="100%"></td>
+            <p>Delgadas y suaves, rellenas de sabores irresistibles que enamoran.</p>
+          </div>
+
+          <div class="caja">
+            <h3>Flanecitos</h3>
+            <td width=50%><img src="imagenes/flanecitos.jpg" WIDTH="100%"></td>
+            <p>Suave y cremoso, con un caramelo dorado que lo convierte en un postre tradicional perfecto.</p>
+          </div>
+
+        </div>
+
+
+        <footer>
+          <p>Practica hecha por Sofia y Evelin</p>
+
+        </footer>
+  </div>
+</body>
+
+</html>
