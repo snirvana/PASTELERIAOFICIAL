@@ -1,0 +1,396 @@
+<html>
+
+<head>
+    <title>VELAZQUEZPAG</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <li class="nav-item active"></li>
+        <a class="navbar-brand" href="index.html">INICIO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag0.html">INTRODUCCIÓN<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag1.html">Recetas faciles<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag2.html">Postres saludables<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag3.html">Postres mexicanos<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag4.html">Tendencia<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="velazquezpag5.html">Pedidos<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" onsubmit="return redirigir(event)">
+                <input id="busqueda" class="form-control mr-sm-2" type="search" placeholder="Buscar" required>
+
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    BUSCAR
+                </button>
+            </form>
+
+            <script>
+                function redirigir(e) {
+                    e.preventDefault();
+
+                    let valor = document.getElementById("busqueda").value.toLowerCase();
+
+                    if (valor.includes("inicio")) {
+                        window.location.href = "index.html";
+                    } else if (valor.includes("Recetas faciles")) {
+                        window.location.href = "velazquezpag1.html";
+                    } else if (valor.includes("postres saludables")) {
+                        window.location.href = "velazquezpag2.html";
+                    } else if (valor.includes("postres mexicanos")) {
+                        window.location.href = "velazquezpag3.html";
+                    } else if (valor.includes("tendencias") || valor.includes("resenas")) {
+                        window.location.href = "velazquezpag4.html";
+                    } else if (valor.includes("pedidos")) {
+                        window.location.href = "velazquezpag5.html";
+                    } else if (valor.includes("Introducción")) {
+                        window.location.href = "velazquezpag0.html";
+                        alert("No se encontró la búsqueda");
+                    }
+                }
+            </script>
+        </div>
+    </nav>
+
+    <img src="imagenes/bane.jpg" WIDTH="105%" ALIGN="100%">
+    <h1 align="center">DULCE BIENVENIDA</h1>
+
+    <table width=70% align=center border=3>
+        <tr align=center>
+            <td><img src="imagenes/paymanzana.JPG" width="75%"></td>
+            <td><img src="imagenes/paylimon.JPG" width="62%"></td>
+            <td><img src="imagenes/payfresa.JPG" witdh="50%"></td>
+            <td><img src="imagenes/paychocolate.JPG" witdth="50%"></td>
+        </tr>
+        <tr align=center>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/pay-manzana-facil">Pay de Manzana</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/pay-limon">Pay de Limon</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/postres-pay-fresa">Pay de Fresa</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/pay-de-chocolate">Pastel de Chocolate</a><br></td>
+        </tr>
+        <tr align=center>
+            <td><img src="imagenes/pasteldevainilla.JPG" width="100%"></td>
+            <td><img src="imagenes/tartadefrutosrojos.JPG" height="90%" width="80%"></td>
+            <td><img src="imagenes/cheese.JPG" width="100%"></td>
+            <td><img src="imagenes/payzanahoria.JPG" height="90%" width="90%"></td>
+        </tr>
+        <tr align=center>
+            <td><a href="https://panyoli.com.mx/pasteles-vainilla-c-264/">Pastel de Vainilla</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/postres-pay-frutos-rojos">Tarta de Frutos
+                    Rojos</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/categorias/cheesecake">Cheesecake</a><br></td>
+            <td><a href="https://www.recetasnestle.com.mx/recetas/pastel-zanahoria">Pastel de Zanahoria</a><br></td>
+        </tr>
+    </table>
+    <h2 align="center">DELICIAS EN OFERTA</h2>
+    <table width=96% align=center border=3>
+        <tr>
+            <td><img src="imagenes/paymanzana.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Masa hojaldrada</li>
+                    <li>Relleno de manzana caramelizada</li>
+                    <li>Espolvoreado con canela</li>
+                    <li>Porcion individual</li>
+                    <li>Ideal para merienda</li>
+                    <li>Fresco y casero</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/paylimon.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Relleno de limon dulce y acido</li>
+                    <li>Base de galleta crujiente</li>
+                    <li>Cubierta de merengue</li>
+                    <li>Bajo en grasas</li>
+                    <li>Decoracion con ralladura de limon</li>
+                    <li>Porcion individual</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/payfresa.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Relleno con fresas frescas</li>
+                    <li>Mermelada natural</li>
+                    <li>Masa suave</li>
+                    <li>Sin conservadores</li>
+                    <li>Color vibrante</li>
+                    <li>Ideal para postres rapidos</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="imagenes/pasteldevainilla.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Base de galleta tipo graham</li>
+                    <li>Relleno cremoso de queso</li>
+                    <li>Opcional con frutos rojos</li>
+                    <li>Textura suave</li>
+                    <li>Decoracion elegante</li>
+                    <li>Perfecto para fiestas</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/paychocolate.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Chocolate oscuro y rico</li>
+                    <li>Relleno de crema de chocolate</li>
+                    <li>Cubierta con ganache</li>
+                    <li>Decoracion con chocolate rallado</li>
+                    <li>Ideal para celebraciones</li>
+                    <li>Textura esponjosa</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/cheese.JPG" WIDTH="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel esponjoso de vainilla</li>
+                    <li>Cubierta de crema batida</li>
+                    <li>Decoracion con frutas frescas</li>
+                    <li>Ideal para eventos familiares</li>
+                    <li>Porciones grandes</li>
+                    <li>Sabor clasico</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <h2 align="center">NUESTROS POSTRES DESTACADOS</h2>
+    <table width=90% align=center border=3 <tr>
+        <td><img src="imagenes/chotra.JPG" WIDTH="100%"></td>
+        <td>Caracteristicas
+            <ul>
+                <li>Chocolate y nuez</li>
+                <li>Relleno cremoso de chocolate</li>
+                <li>Decoracion con nueces</li>
+                <li>Textura humeda</li>
+                <li>Ideal para cumpleaños</li>
+                <li>Porcion generosa</li>
+            </ul>
+        </td>
+        <td><img src="imagenes/9.JPG" WIDTH="100%"></td>
+        <td>Caracteristicas
+            <ul>
+                <li>Masa suave y aireada</li>
+                <li>Relleno de crema pastelera</li>
+                <li>Decoracion con frutas</li>
+                <li>Perfecto para meriendas</li>
+                <li>Hecho con ingredientes naturales</li>
+                <li>Porcion individual</li>
+            </ul>
+        </td>
+        <td><img src="imagenes/5.JPG" WIDTH="100%"></td>
+        <td>Caracteristicas
+            <ul>
+                <li>Relleno de queso cremoso</li>
+                <li>Base de galleta crujiente</li>
+                <li>Opcional con frutos rojos</li>
+                <li>Textura suave</li>
+                <li>Decoracion elegante</li>
+                <li>Perfecto para eventos especiales</li>
+            </ul>
+        </td>
+        </tr>
+    </table>
+    <h2 align="center">SELECCION ESPECIAL</h2>
+    <table width=90% align=center border=3>
+        <tr>
+
+            <td><img src="imagenes/3.JPG" width="100%"></td>
+            <td><img src="imagenes/5.JPG" width="100%"></td>
+            <td><img src="imagenes/9.JPG" width="100%"></td>
+            <td><img src="imagenes/10.JPG" height="100%" width="100%"></td>
+            <td><img src="imagenes/3.JPG" width="100%"></td>
+            <td><img src="imagenes/5.JPG" width="100%"></td>
+            <td><img src="imagenes/9.JPG" width="100%"></td>
+            <td><img src="imagenes/10.JPG" height="100%" width="100%"></td>
+            <td><img src="imagenes/3.JPG" width="100%"></td>
+        </tr>
+    </table><br>
+    <table width=90% align=center border=3>
+        <tr>
+            <td><img src="imagenes/11.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Relleno de manzana y canela</li>
+                    <li>Masa crujiente</li>
+                    <li>Porcion individual</li>
+                    <li>Ideal para postre rapido</li>
+                    <li>Decoracion con azucar glass</li>
+                    <li>Sabor tradicional</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/12.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Relleno de limon con merengue</li>
+                    <li>Base de galleta</li>
+                    <li>Porcion individual</li>
+                    <li>Color y sabor fresco</li>
+                    <li>Bajo en grasa</li>
+                    <li>Ideal para meriendas</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/13.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Relleno de fresa natural</li>
+                    <li>Masa suave</li>
+                    <li>Sin conservadores</li>
+                    <li>Color vibrante</li>
+                    <li>Porcion personal</li>
+                    <li>Ideal para postres rapidos</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="imagenes/pastel.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>fiestas clasico</li>
+                    <li>Base de galleta</li>
+                    <li>Relleno cremoso de queso</li>
+                    <li>Opcional con frutos rojos</li>
+                    <li>Textura suave</li>
+                    <li>Decoracion elegante</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/15.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel de chocolate oscuro</li>
+                    <li>Relleno de crema de chocolate</li>
+                    <li>Cubierta con ganache</li>
+                    <li>Decoracon con chocolate rallado</li>
+                    <li>Perfecto para fiestas</li>
+                    <li>Textura esponjosa</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/pasteldevainilla.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel de vainilla</li>
+                    <li>Cubierta de crema batida</li>
+                    <li>Decoracion con frutas frescas</li>
+                    <li>Porcion grande</li>
+                    <li>Ideal para eventos familiares</li>
+                    <li>Sabor clasico</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="imagenes/16.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel de zanahoria</li>
+                    <li>Relleno con crema de queso</li>
+                    <li>Cubierta con nuez picada</li>
+                    <li>Textura humeda</li>
+                    <li>Ideal para cumpleaños</li>
+                    <li>Decoracion casera</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/17.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Tarta de frutos rojos</li>
+                    <li>Masa suave y crujiente</li>
+                    <li>Relleno con frutas frescas</li>
+                    <li>Decoracion con azucar glass</li>
+                    <li>Porcion individual</li>
+                    <li>Perfecta para postres elegantes</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/18.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel de chocolate y nuez</li>
+                    <li>Cubierta de ganache</li>
+                    <li>Decoracion con nueces</li>
+                    <li>Textura humeda</li>
+                    <li>Porcion generosa</li>
+                    <li>Ideal para cumpleaños</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="imagenes/19.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Cheesecake de frutos rojos</li>
+                    <li>Base de galleta</li>
+                    <li>Relleno cremoso</li>
+                    <li>Decoracion con frutas frescas</li>
+                    <li>Textura suave</li>
+                    <li>Perfecto para eventos especiales</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/20.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pastel de vainilla con crema</li>
+                    <li>Decoracon con frutas</li>
+                    <li>Porcion generosa</li>
+                    <li>Textura esponjosa</li>
+                    <li>Ideal para fiestas</li>
+                    <li>Sabor clasico</li>
+                </ul>
+            </td>
+            <td><img src="imagenes/21.JPG" width="100%"></td>
+            <td>Caracteristicas
+                <ul>
+                    <li>Pay de manzana tradicional</li>
+                    <li>Masa crujiente</li>
+                    <li>Relleno caramelizado</li>
+                    <li>Porcion individual</li>
+                    <li>Decoracion con canela</li>
+                    <li>Ideal para merienda</li>
+                </ul>
+            </td>
+        </tr>
+    </table><br>
+    <h2 align="center">REDES SOCIALES</h2>
+    <table width=40% align=center border=3>
+        <tr>
+            <td><a href="https://oztodoparareposteria.mx/"><img src="imagenes/wha.PNG" width="100%"></td>
+            <td><a href="https://www.elglobo.com.mx/"><img src="imagenes/feblo.PNG" width="100%"></a></td>
+            <td><a
+                    href="https://elmundodelareposteria.com/?srsltid=AfmBOooywTHBtJbsNn_PsHazoZfI5qNs3Vg7Qq7tMvx53xIv8A6Vum1h"><img
+                        src="imagenes/you.PNG" width="100%"></a></td>
+            <td><a href="https://www.instagram.com/parapastelestodo/"><img src="imagenes/inst.PNG" width="100%"></a>
+            </td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
